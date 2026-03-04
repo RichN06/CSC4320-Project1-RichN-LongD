@@ -90,7 +90,7 @@ int main() {
     struct Process processes[MAX];   // Array to store all processes
     int n;                           // Number of processes read from processes.txt file
 
-    int choice = 0;                  // User's input choice
+    int choice = 0;                  // User's menu input choice
 
     n = readProcesses(processes);    // Read the processes.txt file and return the # of processes there are
 
@@ -109,7 +109,7 @@ int main() {
 
     init_memory();
 
-    // User's input for printing options
+    // User's input for printing menu options
     while (choice != 5) {
         printf("\n--------------------> MENU <--------------------\n");
         printf("1) Allocate memory for all processes (First-Fit)\n");
